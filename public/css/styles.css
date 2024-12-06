@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    box-sizing: border-box; /* Áp dụng cho tất cả các phần tử */
+}
+body{
+    margin: 20px 200px;
+}
+
+.background{
+    height: 240px;
+    background: url('../images/background.jpg') center / cover no-repeat;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background h1{
+    color: white;
+}
+
+.heading{
+    color:#225247;
+}
+
+.search-btn, .search-input{
+    height: auto;
+}
+
+.search-btn{
+    background-color: #225247;
+    border: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center; 
+}
+
+
+.search-form{
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.nav{
+    display: flex;
+    gap: 15px;
+    height: 100%;
+    align-items: center;
+}
+
+.nav p{
+    margin: 0;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li{
+    height: 100%;
+
+}
+
+.navbar{
+    height: 60px;
+    width: 100%;
+    padding: 0;
+    
+}
+
+.cate{
+    display: flex;
+    justify-content:space-between;
+    padding: 20px 20px;
+    height: 60px;
+    width: 100%;
+    padding: 0;
+    padding: 0 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 1px solid #225247;
+
+}
+
+.cate li{
+    list-style: none;
+    height: 100%;
+
+}
+
+.cate a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.img-post{
+    width: 100%;
+    border-top: 20px;
+    aspect-ratio: 4/2;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.post-body{
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.post{
+    border-radius: 20px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px
+}
+
+.login-form{
+    width: 50%;
+}
+
+.wrap-login{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
