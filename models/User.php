@@ -25,5 +25,8 @@ class User {
     
         $stmt->close(); 
     }
-    
+    public function logout() {
+        unset($_SESSION['profile']);
+        header('Location: ' . BASE_URL . '/?controller=home&action=index');
+    }
 }
