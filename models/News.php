@@ -23,5 +23,10 @@ class News {
         $stmt->bind_param('ssss', $title, $content, $image, $categoryId);
         $stmt->execute();
     }
+    public function update($title, $content, $image, $id){
+        $stmt = $this->db->prepare("update news set title = ?, content = ?, image = ? where id = ?");
+        $stmt->bind_param('ssss', $title, $content, $image, $id);
+        $stmt->execute();
+    }
     
 }

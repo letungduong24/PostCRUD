@@ -18,5 +18,11 @@ class NewsController {
         $categories = $categoriesModel->getAllCategories();
         include APP_ROOT . '/views/news/detail.php'; 
     }
+    public function create() {
+        include APP_ROOT . '/config/Auth.php';
+        $categoriesModel = new Categories();
+        $categories = $categoriesModel->getAllCategories();
+        include APP_ROOT . '/views/admin/news/add.php'; 
+    }
     
 }
