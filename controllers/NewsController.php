@@ -10,4 +10,5 @@ class NewsController {
         $news = $newsModel->getAllNews();
         include APP_ROOT . '/views/admin/news/index.php'; 
     }
+    
 }
