@@ -10,5 +10,13 @@ class NewsController {
         $news = $newsModel->getAllNews();
         include APP_ROOT . '/views/admin/news/index.php'; 
     }
+    public function show() {
+        include APP_ROOT . '/config/Auth.php';
+        $newsModel = new News();
+        $new = $newsModel->getOneNew($_GET['id']);
+        $categoriesModel = new Categories();
+        $categories = $categoriesModel->getAllCategories();
+        include APP_ROOT . '/views/news/detail.php'; 
+    }
     
 }
