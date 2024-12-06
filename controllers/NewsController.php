@@ -24,5 +24,11 @@ class NewsController {
         $categories = $categoriesModel->getAllCategories();
         include APP_ROOT . '/views/admin/news/add.php'; 
     }
+    public function update() {
+        include APP_ROOT . '/config/Auth.php';
+        $newsModel = new News();
+        $new = $newsModel->getOneNew($_GET['id']);
+        include APP_ROOT . '/views/admin/news/edit.php'; 
+    }
     
 }
