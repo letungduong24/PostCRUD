@@ -28,5 +28,9 @@ class News {
         $stmt->bind_param('ssss', $title, $content, $image, $id);
         $stmt->execute();
     }
-    
+    public function delete($id){
+        $stmt = $this->db->prepare("delete from news where id=?");
+        $stmt->bind_param('s', $id);
+        $stmt->execute();
+    }
 }
