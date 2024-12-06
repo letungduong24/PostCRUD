@@ -6,16 +6,6 @@
 3. **Lê Trí Đức** - MSV: 2251172288
 4. **Nguyễn Bảo Chung** - MSV: 2251172258
 
-
-## Các tính năng chính
-- Tính năng 1: (Mô tả tính năng)
-- Tính năng 2: (Mô tả tính năng)
-- Tính năng 3: (Mô tả tính năng)
-- ...
-
-## Cài đặt
-Để chạy ứng dụng trên máy của bạn, bạn có thể làm theo các bước dưới đây:
-
 ##Cài đặt ứng dụng
 - Sửa database: config/Database.php
 - Sửa đường dẫn chính ứng dụng: sửa biến $appDir trong config/Config.php
