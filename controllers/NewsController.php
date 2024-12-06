@@ -30,5 +30,10 @@ class NewsController {
         $new = $newsModel->getOneNew($_GET['id']);
         include APP_ROOT . '/views/admin/news/edit.php'; 
     }
-    
+    public function delete() {
+        include APP_ROOT . '/config/Auth.php';
+        $newsModel = new News();
+        $new = $newsModel->getOneNew($_GET['id']);
+        include APP_ROOT . '/views/admin/news/delete.php';
+    }
 }
