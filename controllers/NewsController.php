@@ -36,4 +36,15 @@ class NewsController {
         $new = $newsModel->getOneNew($_GET['id']);
         include APP_ROOT . '/views/admin/news/delete.php';
     }
+    public function search() {
+        include APP_ROOT . '/config/Auth.php';
+        $newsModel = new News();
+        $new = [];
+        if(isset($_POST['search'])){
+            $news = $newsModel->search($_POST['search']);
+        }
+        $categoriesModel = new Categories();
+        $categories = $categoriesModel->getAllCategories();
+        include APP_ROOT . '/views/news/search.php'; 
+    }
 }
