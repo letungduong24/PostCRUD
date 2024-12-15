@@ -1,13 +1,14 @@
-# Công nghệ Web - Bài tập nhóm
+# Pure PHP Post CRUD
 
-## Thành viên nhóm
-1. **Lê Tùng Dương** - MSV: 2251172311
-2. **Nguyễn Trà Giang** - MSV: 2251172322
-3. **Lê Trí Đức** - MSV: 2251172288
-4. **Nguyễn Bảo Chung** - MSV: 2251172258
+## Install
+- Configure database: config/Database.php
+- Modify app URL: edit $appDir in config/Config.php
+- Install database: Create table, import SQL file (news.sql)
+- Default admin account: admin - 123456
 
-## Cài đặt ứng dụng
-- Sửa database: config/Database.php
-- Sửa đường dẫn chính ứng dụng: sửa biến $appDir trong config/Config.php
-- Cài đặt cơ sở dữ liệu: Tạo bảng, import file sql trong thư mục config
+# Ứng dụng CRUD bài viết bằng PHP thuần
+## Cài đặt
+- Cấu hình database: config/Database.php
+- Chỉnh sửa URL ứng dụng: chỉnh sửa $appDir trong config/Config.php
+- Cài đặt database: Tạo bảng, nhập file sql (news.sql)
 - Tài khoản admin mặc định: admin - 123456
